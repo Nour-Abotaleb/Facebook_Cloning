@@ -1,0 +1,673 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	font-family: 'Poppins', sans-serif;
+	background-color: #18191a;
+	font-family: sans-serif;
+	height: 1000px;
+}
+
+/* Header Start */
+.container {
+	padding: 8px 14px;
+	margin: auto;
+	background-color: #242526;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+}
+
+.container::after {
+	position: absolute;
+	background-color: #868e96;
+	width: 100%;
+	height: 1px;
+	content: '';
+	bottom: 0;
+	left: 0;
+	opacity: 0.3;
+}
+
+i,
+img {
+	cursor: pointer;
+}
+.brand {
+	display: flex;
+}
+.search-icon {
+	background-color: #3a3b3c;
+	width: 230px;
+	height: 37px;
+	border-radius: 50px;
+	position: relative;
+	color: #6e7072;
+	font-size: 14px;
+	margin-left: 10px;
+	margin-top: 2px;
+}
+
+.search-icon span {
+	margin-left: 33px;
+	line-height: 37px;
+}
+
+.search {
+	color: #b8bbbf;
+	position: absolute;
+	top: 12px;
+	left: 10px;
+}
+
+.header-icons {
+	color: #b8bbbf;
+	font-size: 22px;
+}
+
+.header-icons i {
+	margin-left: 22px;
+	font-size: 20px;
+}
+.header-icons .icons {
+	transition: background-color 0.3s ease;
+	border-radius: 8px;
+	padding: 14px 40px;
+	cursor: pointer;
+}
+
+.header-icons .icons:hover {
+	background-color: #3a3b3c;
+}
+
+.header-icons .home {
+	margin: 0px;
+	color: #0866ff;
+	position: relative;
+	cursor: pointer;
+}
+
+.header-icons .home::after {
+	position: absolute;
+	content: '';
+	width: 90px;
+	height: 2.8px;
+	top: 39px;
+	left: -35px;
+	margin: auto;
+	background-color: #0866ff;
+}
+
+.menu-section {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.menu-section i {
+	color: #b8bbbf;
+	font-size: 20px;
+	background-color: #3a3b3c;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	margin-left: 10px;
+}
+
+.menu-section i:hover {
+	background-color: #4e4f50;
+}
+
+.admin {
+	border-radius: 50%;
+	margin-left: 10px;
+	transition: opacity 0.3s ease;
+}
+
+.admin:hover {
+	opacity: 0.6;
+}
+
+/* Header End */
+
+/* Sidbar Start */
+.sidebar {
+	width: 25%;
+	margin-top: 80px;
+	position: relative;
+	padding-bottom: 5px;
+}
+
+.sidebar-icons {
+	position: relative;
+}
+
+.sidebar .sidebar-icons::after {
+	position: absolute;
+	bottom: -10px;
+	left: 20px;
+	content: '';
+	width: 80%;
+	height: 1px;
+	background-color: #b8bbbf;
+	opacity: 0.3;
+}
+
+.sidebar-icons div {
+	margin: 0px 10px;
+	margin-right: 0px;
+	transition: background-color 0.3s ease;
+	border-radius: 8px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	cursor: pointer;
+	padding-left: 8px;
+}
+
+.account img {
+	border-radius: 50%;
+}
+
+.sidebar-icons i {
+	font-size: 19px;
+}
+
+.sidebar-icons .friends i {
+	background: linear-gradient(#3294f7, #6ddacd);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.saved i {
+	background: linear-gradient(#cb54c3, #a66bef);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.video i {
+	background: linear-gradient(#52cec9, #338eef);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.memories i {
+	background: linear-gradient(#38a3f0, #f7f9fa);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.market i {
+	background: linear-gradient(#3294f7, #6ddacd);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.more i {
+	color: #e7e9ed;
+	text-align: center;
+	background-color: #454546;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 50%;
+	font-size: 14px;
+}
+
+.account {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.account .name {
+	margin-left: 10px;
+}
+
+.title {
+	margin-left: 10px;
+}
+
+.sidebar-icons div:hover,
+.shortcuts div:hover {
+	background-color: #303031;
+}
+
+.sidebar-icons div span {
+	color: #e7e9ed;
+}
+
+.shortcuts {
+	margin-top: 10px;
+	margin-left: 15px;
+	color: #b8bbbf;
+	position: relative;
+}
+
+.shortcuts h4 {
+	margin-top: 30px;
+}
+.shortcuts div {
+	display: flex;
+	align-items: center;
+	margin-top: 5px;
+	transition: background-color 0.3s ease;
+	border-radius: 8px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	cursor: pointer;
+	padding-left: 8px;
+	padding-right: 0px;
+}
+
+.shortcuts img {
+	border-radius: 5px;
+}
+
+.shortcuts span {
+	margin-left: 10px;
+}
+
+.privacy {
+	margin-top: 20px;
+}
+
+.privacy a {
+	color: #b8bbbf;
+	text-decoration: none;
+}
+
+.privacy a:hover {
+	text-decoration: underline;
+}
+/* Sidebar End */
+
+/* Content Start */
+.main-content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.content {
+	margin: auto;
+	margin-right: 200px;
+}
+.content .stories {
+	display: flex;
+	margin-right: 130px;
+}
+
+.content .stories div {
+	margin-left: 10px;
+}
+
+.stories img {
+	border-radius: 10px;
+}
+
+.stories .story1 {
+	position: relative;
+}
+
+.account-img {
+	position: relative;
+}
+
+.create-story {
+	position: absolute;
+	background: #202122;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	width: 135px;
+	height: 55px;
+	bottom: 0;
+	right: auto;
+	margin-left: 0 !important;
+}
+
+.create-story i {
+	background-color: #075ce6;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	margin: 0px auto;
+}
+
+.create-story span {
+	display: block;
+	font-size: 14px;
+}
+
+.story img:hover {
+	opacity: 0.8;
+}
+
+.account-img img {
+	position: absolute;
+	border-radius: 50% !important;
+	top: -220px;
+	z-index: 99;
+	border: 3px solid #1877f2;
+}
+
+.content-container {
+	/*    width: 50%;*/
+	margin: 20px 40px;
+}
+
+.header-content-new {
+	background-color: #242526;
+	border-radius: 10px;
+	width: 500px;
+	padding: 20px;
+}
+.new-icons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.new-icons div {
+	margin-left: 25px;
+	border-radius: 5px;
+	padding: 10px 0px;
+	width: 180px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.new-icons div:hover {
+	background-color: #3a3b3c;
+}
+
+.new-icons span {
+	color: #b8bbbf;
+	margin-left: 5px;
+	transition: opacity 0.2s ease;
+}
+.new {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.new::after {
+	position: absolute;
+	bottom: -10px;
+	left: 0;
+	content: '';
+	width: 100%;
+	height: 1px;
+	background-color: #b8bbbf;
+	opacity: 0.1;
+}
+.new img {
+	border-radius: 50%;
+}
+
+.new img:hover {
+	opacity: 0.5;
+}
+
+.header-content-new .new span:hover {
+	opacity: 0.8;
+}
+.new-icons i {
+	font-size: 25px;
+}
+
+.live-video .video {
+	color: #f23e5c;
+}
+
+.photos .photo {
+	color: #56c070;
+}
+
+.emoji .smile {
+	color: #eab73d;
+}
+
+.posts {
+	background-color: #242526;
+	border-radius: 10px;
+	width: 500px;
+	padding: 10px 20px;
+	color: #e4e6eb;
+}
+
+.posts .group-header {
+	display: flex;
+}
+
+.group-name {
+	transition: border 0.3s ease;
+}
+.group-name:hover {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+	cursor: pointer;
+}
+.image-group {
+	margin-left: -22px;
+	margin-top: 20px;
+}
+
+.post-icon-right i {
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	border-radius: 50%;
+	font-size: 20px;
+	transition: background-color 0.1s ease;
+}
+
+.post-icon-right i:hover {
+	background-color: #3a3b3c;
+}
+
+.post-image img {
+	margin-left: -20px;
+	margin-top: 10px;
+	width: 500px;
+}
+
+.react {
+	position: relative;
+}
+
+.react::after {
+	position: absolute;
+	content: '';
+	bottom: -10px;
+	left: 0;
+	background-color: #b8bbbf;
+	opacity: 0.3;
+	width: 100%;
+	height: 1px;
+}
+
+.post-btn {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	margin: auto;
+}
+
+.post-btn div {
+	cursor: pointer;
+	position: relative;
+	border-radius: 5px;
+	width: 150px;
+	padding: 10px 0px;
+	transition: background-color 0.1s ease;
+}
+
+.post-btn div:hover {
+	background-color: #3a3b3c;
+}
+
+.post-btn span {
+	font-size: 16px;
+}
+/* Content End */
+
+/*   Right Sidebar  */
+.right-sidebar {
+}
+
+.right-sidebar::-webkit-scrollbar {
+	width: 0.6rem;
+}
+
+.right-sidebar::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+.right-sidebar::-webkit-scrollbar-thumb {
+	background: rgba(47, 46, 65, 0.9);
+	border-radius: 1rem;
+}
+.sponsered h4 {
+	color: #b0b3b8;
+}
+.sponsered-content img {
+	border-radius: 10px;
+}
+
+.sponsered-content {
+	color: #e4e6eb;
+	font-size: 15px;
+	display: flex;
+	font-weight: 300;
+	padding-top: 15px !important;
+	position: relative;
+}
+
+.sponsered-content::after {
+	position: absolute;
+	content: '';
+	top: 140px;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background-color: #868e96;
+	opacity: 0.3;
+}
+
+.sponsered-content span {
+	width: 100px;
+	margin: auto 10px;
+	line-height: 20px;
+}
+
+.grammarly {
+	color: #b0b3b8;
+	margin-top: 5px;
+	font-size: 14px;
+}
+
+.contact-header {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;
+	color: #b0b3b8;
+}
+
+.friends-account div,
+.sidebar-footer div {
+	color: #4f5152;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	margin-right: 0px;
+	transition: background-color 0.3s ease;
+	border-radius: 8px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 8px;
+}
+
+.friends-account div:hover,
+.sidebar-footer div:hover {
+	background-color: #303031;
+}
+
+.friends-account img {
+	border-radius: 50%;
+}
+
+.friends-account span {
+	margin-left: 10px;
+}
+
+.friends-account {
+	position: relative;
+}
+.friends-account::after {
+	position: absolute;
+	bottom: -20px;
+	left: 0;
+	content: '';
+	width: 100%;
+	height: 1px;
+	background-color: #868e96;
+	opacity: 0.3;
+}
+
+.sidebar-footer {
+	display: block;
+	margin-top: 40px;
+	color: #b0b3b8;
+}
+
+.sidebar-footer h4 {
+	margin-bottom: 20px;
+	position: relative;
+}
+.sidebar-footer div {
+	position: relative;
+}
+
+.sidebar-footer i {
+	text-align: center;
+	background-color: #454546;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 50%;
+	font-size: 14px;
+}
+
+.sidebar-footer span {
+	margin-left: 5px;
+}
+
+.sidebar-footer i,
+.sidebar-footer span {
+	color: #e4e6eb;
+}
+
+.sidebar::-webkit-scrollbar {
+	width: 0.6rem;
+}
+
+.sidebar::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+	background: rgba(47, 46, 65, 0.9);
+	border-radius: 1rem;
+}
